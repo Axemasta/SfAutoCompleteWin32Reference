@@ -2,11 +2,17 @@
 <Application
     x:Class="AutoCompleteWindowsReference.App"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms">
     <Application.Resources>
         <ResourceDictionary>
             <Style x:Key="LabelStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="Black" />
+            </Style>
+
+            <!--  Comment this out and macOS tests will work  -->
+            <Style TargetType="autocomplete:SfAutoComplete">
+                <Setter Property="Visual" Value="AutocompleteKeyboardSearchVisual" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>

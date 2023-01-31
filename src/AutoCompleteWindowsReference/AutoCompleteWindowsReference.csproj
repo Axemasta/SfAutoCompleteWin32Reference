@@ -15,6 +15,7 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.5" />
+    <PackageReference Include="Syncfusion.Xamarin.SfAutoComplete" Version="19.4.0.56" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Properties\" />
@@ -24,6 +25,7 @@
     <None Remove="Interfaces\" />
     <None Remove="Services\" />
     <None Remove="Xamarin.CommunityToolkit" />
+    <None Remove="Syncfusion.Xamarin.SfAutoComplete" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

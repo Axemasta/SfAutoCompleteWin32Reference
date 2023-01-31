@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Syncfusion.SfAutoComplete.XForms.iOS;
 using UIKit;
 
 namespace AutoCompleteWindowsReference.iOS
@@ -23,6 +24,9 @@ namespace AutoCompleteWindowsReference.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            SfAutoCompleteRenderer.Init();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

@@ -1,6 +1,7 @@
 ﻿using AutoCompleteWindowsReference.Services;
 using AutoCompleteWindowsReference.ViewModels;
 using AutoCompleteWindowsReference.Views;
+using Syncfusion.Licensing;
 using Xamarin.Forms;
 
 namespace AutoCompleteWindowsReference
@@ -9,6 +10,8 @@ namespace AutoCompleteWindowsReference
     {
         public App()
         {
+            SyncfusionLicenseProvider.RegisterLicense(Constants.SyncFusionLicenseKey);
+
             InitializeComponent();
 
             var mainPage = new MainPage();
