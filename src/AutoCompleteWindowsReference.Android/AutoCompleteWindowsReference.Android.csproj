@@ -59,7 +59,7 @@
       <Version>2.0.5</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfAutoComplete">
-      <Version>19.4.0.56</Version>
+      <Version>20.4.0.44</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

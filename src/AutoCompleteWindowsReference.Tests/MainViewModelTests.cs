@@ -67,6 +67,14 @@ namespace AutoCompleteWindowsReference.Tests
         [Fact]
         public async Task NavigateCommand_Should_PushSecondPage()
         {
+            /*
+             * This test will fail on mac if the app.xaml has a style that applies to SfAutoComplete
+             * 
+             * Commenting out the styles in the app.xaml will cause the tests to pass
+             * Commenting in will cause the exception:
+             * Could not load type 'System.Windows.Freezable'
+             */
+
             // Arrange
             MockSetup.Init();
 
